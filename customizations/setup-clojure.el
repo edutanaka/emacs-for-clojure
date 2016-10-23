@@ -85,3 +85,7 @@
 
 (unless (package-installed-p 'inf-clojure)
   (package-install 'inf-clojure))
+
+(defun figwheel-repl () 
+  (interactive) 
+  (run-clojure "lein figwheel")) 
